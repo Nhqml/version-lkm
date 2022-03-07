@@ -1,0 +1,24 @@
+Author: Kenji Gaillac
+
+PREREQUISITES
+=============
+
+Kernel headers and GCC must be installed.
+You must obviously be root to load the LKM.
+
+
+COMPILATION
+===========
+
+`make` will compile the LKM
+`make test` will compile the tests
+
+TESTING
+=======
+
+```bash
+make && make test # Compile everything
+sudo insmod version.ko # Load the LKM
+sudo ./test # Run the tests
+sudo rmmod version # Unload the LKM
+```
